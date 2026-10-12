@@ -1,0 +1,17 @@
+[package]
+edition = "2018"
+name = "super_mass"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+name = "super_mass"
+
+[dependencies]
+mass = {path = '../mass'}
+ndarray = "*"
+numpy = "*"
+
+[dependencies.pyo3]
+features = ["extension-module"]
+version = "*"
